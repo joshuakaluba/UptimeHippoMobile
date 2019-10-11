@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Uptime Hippo",
+    "slug": "UptimeHippoMobile",
+    "privacy": "unlisted",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4baced"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.joshuakaluba.uptimehippo"
+    },
+    "android": {
+      "package": "com.joshuakaluba.uptimehippo",
+      "permissions": [
+        "VIBRATE",
+        "NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1
+    }
+  }
+}
