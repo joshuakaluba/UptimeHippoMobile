@@ -1,4 +1,4 @@
-# Simply Secure Mobile
+# Uptime Hippo Mobile
 
 Mobile app for UptimeHippo
 
