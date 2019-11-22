@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, StyleSheet } from "react-native";
 import Modal from "react-native-modal";
-import { Image } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
+import { Colors } from "../constants";
 
 export default class LoadingModal extends React.Component {
   static propTypes = {
@@ -27,7 +27,7 @@ export default class LoadingModal extends React.Component {
 
 const styles = StyleSheet.create({
   modalContent: {
-    backgroundColor: "white",
+    backgroundColor: Colors.white,
     padding: 22,
     justifyContent: "center",
     alignItems: "center",
