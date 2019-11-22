@@ -7,7 +7,6 @@ import PrimaryButton from "./PrimaryButton";
 export default class Dashboard extends React.Component {
   static propTypes = {
     monitors: PropTypes.array.isRequired,
-    triggerStatusCheck: PropTypes.func.isRequired,
     loading: PropTypes.bool.isRequired
   };
 
@@ -50,13 +49,6 @@ export default class Dashboard extends React.Component {
             {this.props.monitors ? this.props.monitors.length : "0"}
           </Text>
         </View>
-        <View style={styles.statusCheckContainer}>
-          <PrimaryButton
-            title={StringDictionary.triggerStatusCheck}
-            onPress={this.props.triggerStatusCheck}
-            disabled={this.props.loading}
-          />
-        </View>
       </View>
     );
   }
@@ -73,9 +65,6 @@ const styles = StyleSheet.create({
     marginTop: 5,
     borderWidth: 0.5,
     borderColor: Colors.lightGrey
-  },
-  statusCheckContainer: {
-    alignItems: "center"
   },
   cardHeaderText: {
     color: Colors.darkGrey,
