@@ -6,6 +6,8 @@ import * as Icon from "@expo/vector-icons";
 import { AppLoading,  } from 'expo';
 import AppNavigator from './src/navigation/AppNavigator';
 import { Colors } from "./src/constants";
+import { YellowBox } from 'react-native';
+YellowBox.ignoreWarnings(['Remote debugger']);
 
   theme = {
     ...DefaultTheme,
@@ -35,7 +37,7 @@ export default class App extends React.Component {
       return (
         <PaperProvider theme={theme}>
           <View style={styles.container}>
-            {Platform.OS === "ios" && <StatusBar barStyle="default" />}
+            {Platform.OS === "ios" && <StatusBar barStyle="light-content" />}
             <AppNavigator />
           </View>
         </PaperProvider>
@@ -65,6 +67,6 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#4baced"
+    backgroundColor: Colors.primary
   }
 });
