@@ -17,7 +17,7 @@ export default class NoDataCard extends Component {
         <Icon.Entypo
           name={this.props.icon}
           size={35}
-          color={Colors.lightGrey}
+          color={Colors.accent}
         />
         <Text style={styles.noRecords}>{this.props.noDataOutput}</Text>
         {this.props.noDataActionCall && this.props.noDataActionTitle && (
@@ -35,14 +35,14 @@ export default class NoDataCard extends Component {
 
 const styles = StyleSheet.create({
   card: {
-    margin: 15,
-    paddingTop: 50,
-    paddingBottom: 50,
+    margin: 5,    
     backgroundColor: Colors.white,
     justifyContent: "center",
     alignItems: "center",
     paddingLeft: 25,
     paddingRight: 25,
+    paddingTop: 50,
+    paddingBottom: 50,
     borderColor: Colors.lightGrey,
     borderWidth: 2,
     borderRadius: 12
