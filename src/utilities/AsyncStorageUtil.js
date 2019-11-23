@@ -4,7 +4,7 @@ const TOKEN_STORAGE_KEY = "TOKEN_STORAGE_KEY_";
 const USER_STORAGE_KEY = "USER_STORAGE_KEY";
 const PUSH_NOTIFICATION_KEY = "PUSH_NOTIFICATION_KEY";
 
-export default StorageHelper = {
+export default AsyncStorageUtil = {
   async saveToken(user) {
     await AsyncStorage.setItem(TOKEN_STORAGE_KEY, user.accessToken);
     await AsyncStorage.setItem(USER_STORAGE_KEY, JSON.stringify(user));
@@ -30,7 +30,7 @@ export default StorageHelper = {
   },
 
   async clear() {
-    console.log("StorageHelper.clear() - Clearing AsyncStorage");
+    console.log("AsyncStorageUtil.clear() - Clearing AsyncStorage");
     await AsyncStorage.removeItem(TOKEN_STORAGE_KEY);
     await AsyncStorage.removeItem(USER_STORAGE_KEY);
     await AsyncStorage.removeItem(PUSH_NOTIFICATION_KEY);

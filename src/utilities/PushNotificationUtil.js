@@ -1,7 +1,7 @@
 import { Notifications } from "expo";
 import * as Permissions from "expo-permissions";
 import UserAccountRepository from "../dataaccesslayer/UserAccountRepository";
-import StorageHelper from "./StorageHelper";
+import AsyncStorageUtil from "./AsyncStorageUtil";
 
 export default PushNotificationUtil = {
   async registerForPushNotificationsAsync() {
@@ -25,7 +25,7 @@ export default PushNotificationUtil = {
 
       let token = await Notifications.getExpoPushTokenAsync();
       await UserAccountRepository.registerPushNotifications(token);
-      await StorageHelper.savePushNotificationToken(token);
+      await AsyncStorageUtil.savePushNotificationToken(token);
     } catch (error) {
       console.log(error);
     }
