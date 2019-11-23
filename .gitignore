@@ -11,3 +11,4 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
+Uri.js
