@@ -55,7 +55,9 @@ export default StringDictionary = {
   type: "Type",
   unableToDeleteMonitor: "Unable to delete monitor",
   unableToGetMonitorLogs: "Unable to get monitor logs",
+  unableToSaveSettings:"Unable to save settings",
   unableToGetMonitors: "Unable to get monitors",
+  unableToGetUserSettings: "Unable to get user settings",
   unableToSaveMonitor: "Unable to save monitor",
   viewMonitorLogs: "View Monitor Logs"
 };
