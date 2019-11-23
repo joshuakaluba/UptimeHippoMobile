@@ -1,0 +1,6 @@
+// rename this file to Uri.js and fill out appropriate uri endpoints 
+
+export default Uri = {
+  privacyPolicy: "https://api.example.com/privacy.html",
+  baseServerApi: "https://api.example.com"
+};
