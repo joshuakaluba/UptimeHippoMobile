@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from 'react-native';
+import { View } from "react-native";
 import MonitorListItem from "./MonitorListItem";
 
 export default class MonitorList extends React.Component {
@@ -9,7 +9,7 @@ export default class MonitorList extends React.Component {
     onSelect: PropTypes.func.isRequired,
     onEdit: PropTypes.func.isRequired,
     onDelete: PropTypes.func.isRequired,
-    onViewMonitorLogs: PropTypes.func.isRequired,
+    onViewMonitorLogs: PropTypes.func.isRequired
   };
 
   render() {
@@ -29,5 +29,3 @@ export default class MonitorList extends React.Component {
     );
   }
 }
-
-

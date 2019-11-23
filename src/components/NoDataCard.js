@@ -14,11 +14,7 @@ export default class NoDataCard extends Component {
   render() {
     return (
       <View style={styles.card}>
-        <Icon.Entypo
-          name={this.props.icon}
-          size={35}
-          color={Colors.accent}
-        />
+        <Icon.Entypo name={this.props.icon} size={35} color={Colors.accent} />
         <Text style={styles.noRecords}>{this.props.noDataOutput}</Text>
         {this.props.noDataActionCall && this.props.noDataActionTitle && (
           <PrimaryButton
@@ -35,7 +31,7 @@ export default class NoDataCard extends Component {
 
 const styles = StyleSheet.create({
   card: {
-    margin: 5,    
+    margin: 5,
     backgroundColor: Colors.white,
     justifyContent: "center",
     alignItems: "center",

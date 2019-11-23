@@ -37,7 +37,8 @@ export default class MonitorInputDialog extends React.Component {
   };
 
   _validateMonitor = () =>
-    this.props.monitor.name.trim().length < 1 || this.props.monitor.url.trim().length < 1;
+    this.props.monitor.name.trim().length < 1 ||
+    this.props.monitor.url.trim().length < 1;
 
   render() {
     return (
