@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, Text, StyleSheet } from "react-native";
 import { Colors, StringDictionary } from "../constants";
-import PrimaryButton from "./PrimaryButton";
+import OfflineSitesList from "./OfflineSitesList";
 
 export default class Dashboard extends React.Component {
   static propTypes = {
@@ -24,6 +24,12 @@ export default class Dashboard extends React.Component {
     }).length;
   };
 
+  _getOfflineMonitors = monitors => {
+    return monitors.filter(monitor => {
+      return monitor.lastMonitorSuccess === false;
+    });
+  };
+
   render() {
     return (
       <View>
@@ -34,6 +40,11 @@ export default class Dashboard extends React.Component {
           <Text style={[styles.cardBodyText, { color: Colors.danger }]}>
             {this._getNumberOfCurrentlySitesStatus(false)}
           </Text>
+          {this._getNumberOfCurrentlySitesStatus(false) > 0 && (
+            <OfflineSitesList
+              monitors={this._getOfflineMonitors(this.props.monitors)}
+            />
+          )}
         </View>
         <View style={styles.card}>
           <Text style={styles.cardHeaderText}>
