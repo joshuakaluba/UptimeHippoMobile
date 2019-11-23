@@ -9,6 +9,7 @@ export default StringDictionary = {
   currentlyOnline: "Sites Currently Online",
   delete: "Delete",
   deleteConfirmation: "Are you sure you want to delete: ",
+  dismiss:"Dismiss",
   edit: "Edit",
   editMonitor: "Edit Monitor",
   email: "Email",
