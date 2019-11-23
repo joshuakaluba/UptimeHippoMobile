@@ -51,6 +51,7 @@ export default StringDictionary = {
   registerTitle: "Please Register",
   responseCode: "Response Code",
   save: "Save",
+  savedSuccessfully: "Saved successfully",
   settings: "Settings",
   sites: "Total Sites",
   status: "Status",
@@ -63,5 +64,6 @@ export default StringDictionary = {
   unableToGetMonitors: "Unable to get monitors",
   unableToGetUserSettings: "Unable to get user settings",
   unableToSaveMonitor: "Unable to save monitor",
-  viewMonitorLogs: "View Monitor Logs"
+  viewMonitorLogs: "View Monitor Logs",
+  yourSettingsHaveBeenSaved:"Your settings have been saved!"
 };
