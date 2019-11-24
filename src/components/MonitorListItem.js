@@ -111,7 +111,9 @@ export default class MonitorListItem extends React.Component {
           <Row>
             <Col size={6}>
               <Text>
-                {MonitorTypes[this.props.monitor.type].value}
+                {!!MonitorTypes[this.props.monitor.type]
+                  ? MonitorTypes[this.props.monitor.type].value
+                  : ""}
                 {this.props.monitor.type === 1 &&
                   `: ${this.props.monitor.keyWord}`}
                 {this.props.monitor.type === 3 &&
