@@ -6,7 +6,7 @@ import {
   ScrollView,
   Text
 } from "react-native";
-import { Colors, StringDictionary } from "../constants";
+import { Colors, StringDictionary, ApplicationDefaultSettings } from "../constants";
 import { Dashboard, SuccessCard, NoDataCard } from "../components";
 import { MonitorRepository } from "../dataaccesslayer";
 import { Lib } from "../utilities";
